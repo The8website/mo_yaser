@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MO YASER</title>
+    <link rel="icon" href="logo_icon.png">
+    <meta name="google-site-verification" content="MO YASER" />
+
+
+    <!-- File CSS -->
+     <link rel="stylesheet" href="style.css">
+
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+    <div class="bg-lines">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+
+    <header>
+        <nav class="container">
+            <a href="#" class="logo"><img src="loo.png" alt=""></a>
+
+            <div class="links" id="links">
+                <span class="close_menu"  onclick="Open_colose_Menu()"><i class="fa-solid fa-xmark"></i></span>
+                
+                
+                <a href="#" class="logo"><img src="home1.png" alt=""></a>
+                <a class="active" href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">services</a>
+                <a href="#">Projects</a>
+                <a href="#">Contact</a>
+            </div>
+
+            <div class="icons">
+                <a href="https://www.facebook.com/MO3AMMEDYASSER?mibextid=ZbWKwL"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.instagram.com/itz.mo_yaser?igsh=MW00eWFkZ2t2eW03eg=="><i class="fa-brands fa-instagram"></i></a>
+                <span class="icon_menu" onclick="Open_colose_Menu()"><i class="fa-solid fa-bars"></i></span>
+            
+            </div>
+        </nav>
+    </header>
+
+
+    <div class="hero">
+        <div class="container">
+            <div class="div_Text">
+                <h4>Hello, i'm</h4>
+                <h3><span>MOHAMED YASER.</h3>
+                <h3>Web Developer</h3>
+                <p></p>
+
+                <div class="btns">
+                    <a href="https://www.instagram.com/itz.mo_yaser?igsh=MW00eWFkZ2t2eW03eg==" class="btn">Follow me</a>
+                </div>
+            </div>
+
+            <div class="div_img">
+                <img class="person" src="home1.png" alt="">
+                <img class="bg_img" src="home1.png" alt="">
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <section class="services">
+        <div class="container">
+            <div class="top_section">
+                <h2>Our <span>Services</span></h2>
+            </div>
+
+
+            <div class="boxs">
+                <div class="box">
+                    <i class="fa-solid fa-code"></i>
+                    <h4>Web Developer</h4>
+                    <p></p>
+                </div>
+
+                <div class="box">
+                    <i class="fa-solid fa-code"></i>
+                    <h4>Web Developer</h4>
+                    <p></p>
+                </div>
+
+
+                <div class="box">
+                    <i class="fa-solid fa-code"></i>
+                    <h4>Web Developer</h4>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="top_section">
+            <h2>Contact   <span>Me</span></h2>
+        </div>
+
+        <div class="container">
+
+            <div class="soial_contact">
+                <h2>Follow Me</h2>
+                <div class="links">
+                    <a href="mailto:mohmmed77yaser@mail.com"><i class="fa-solid fa-envelope"></i>gmail</a>
+                    <a href="tel:+201158678135"><i class="fa-solid fa-phone"></i> 01158678135</a>
+                    <a href="tel:+201500266462"><i class="fa-solid fa-phone"></i> 01500266462</a>
+                    <a href="https://www.facebook.com/MO3AMMEDYASSER?mibextid=ZbWKwL" target="_blank"><i class="fa-brands fa-facebook-f"></i> FaceBook</a>
+                    <a href="#"><i class="fa-brands fa-twitter" target="_blank"></i> Twitter</a>
+                    <a href="https://www.instagram.com/itz.mo_yaser?igsh=MW00eWFkZ2t2eW03eg=="><i class="fa-brands fa-instagram" target="_blank"></i> instagram</a>
+                </div>
+            </div>
+
+            <form class="contact-card" onsubmit="sendToWhatsApp(event)">
+    <h2>راسلنا عبر واتساب</h2>
+    <input type="text" id="name" placeholder="اسمك الكامل" required />
+    <input type="tel" id="phone" placeholder="رقم الهاتف" required />
+    <textarea id="message" placeholder="اكتب رسالتك هنا..." rows="5" required></textarea>
+    <button type="submit">إرسال عبر واتساب</button>
+  </form>
+
+  <script>
+  function sendToWhatsApp(e) {
+    e.preventDefault();
+    const name = document.getElementById("name").value;
+    const phoneNumber = document.getElementById("phone").value;
+    const message = document.getElementById("message").value;
+
+    const whatsappReceiver = "201158678135"; // ← رقمك الجديد بصيغة دولية
+    const text = `👋 مرحبًا، لدي رسالة جديدة من الموقع الخاص بك  :\n\n🧑 الاسم: ${name}\n📞 رقم الهاتف: ${phoneNumber}\n💬 الرسالة: ${message}`;
+    const url = `https://wa.me/${whatsappReceiver}?text=${encodeURIComponent(text)}`;
+
+    window.open(url, "_blank");
+  }
+</script>
+
+
+    </section>
+    
+    <script src="main.js"></script>
+    
+</body>
+</html>
